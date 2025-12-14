@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Marty Marola</title>
+  <meta name="description" content="Contact Marty Marola for quotes and service requests." />
+  <link rel="icon" href="data:," />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="index.html" class="brand-link" aria-label="Home">
+          <span class="brand-mark">MM</span>
+          <span class="brand-text">
+            <span class="brand-name">Marty Marola</span>
+            <span class="brand-tag">Practical services, done right</span>
+          </span>
+        </a>
+      </div>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="navMenu">
+          <span class="sr-only">Toggle menu</span>
+          ☰
+        </button>
+        <div id="navMenu" class="nav-menu">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="services.html">Services</a>
+          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link active" href="contact.html">Contact</a>
+          <a class="btn btn-primary btn-small" href="contact.html">Request a Quote</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <h1>Contact</h1>
+        <p class="lead muted">Send a quick message. I’ll respond with next steps.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split">
+        <div>
+          <h2>Direct</h2>
+          <div class="contact-list">
+            <a class="contact-item" href="tel:+19542042464">📞 <span>(954) 204-2464</span></a>
+            <a class="contact-item" href="mailto:marty.marola@exprealty.com">✉️ <span>marty.marola@exprealty.com</span></a>
+          </div>
+
+          <div class="note">
+            <p class="muted small">
+              Response time is typically same day. If it’s urgent, calling is fastest.
+            </p>
+          </div>
+        </div>
+
+        <div class="card form-card">
+          <h2 class="card-title">Request a quote</h2>
+
+          <!-- FORM: replace action URL with your Formspree endpoint -->
+          <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required />
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required />
+            </div>
+
+            <div class="field">
+              <label for="phone">Phone (optional)</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" />
+            </div>
+
+            <div class="field">
+              <label for="service">What do you need?</label>
+              <select id="service" name="service" required>
+                <option value="" selected disabled>Select one</option>
+                <option>Flowater / Refill Station</option>
+                <option>Real Estate Support</option>
+                <option>Vinyl / Decals</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="message">Details</label>
+              <textarea id="message" name="message" rows="6" placeholder="What’s the situation? Timeline? Location? Any helpful details." required></textarea>
+            </div>
+
+            <!-- Helpful metadata -->
+            <input type="hidden" name="_subject" value="New website inquiry" />
+            <input type="hidden" name="source" value="GitHub Pages site" />
+
+            <button class="btn btn-primary btn-block" type="submit">Send message</button>
+
+            <p class="small muted m-top">
+              By sending, you agree to be contacted back about your request.
+            </p>
+
+            <div id="formStatus" class="form-status" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="small muted">© <span id="year"></span> Marty Marola. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
