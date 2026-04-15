@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Private Area — Marty Marola</title>
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="icon" href="data:," />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="index.html" class="brand-link" aria-label="Home">
+          <span class="brand-mark">MM</span>
+          <span class="brand-text">
+            <span class="brand-name">Marty Marola</span>
+            <span class="brand-tag">Practical services, done right</span>
+          </span>
+        </a>
+      </div>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="navMenu">
+          <span class="sr-only">Toggle menu</span>
+          ☰
+        </button>
+        <div id="navMenu" class="nav-menu">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="services.html">Services</a>
+          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+          <a class="nav-link nav-private active" href="private.html">Private Area</a>
+          <a class="btn btn-primary btn-small" href="contact.html">Request a Quote</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Password Gate -->
+  <div id="passwordGate" class="pw-gate" role="dialog" aria-modal="true" aria-label="Password required">
+    <div class="pw-card card">
+      <h2 class="pw-title">🔒 Private Area</h2>
+      <p class="muted">Enter the password to view this page.</p>
+      <form id="pwForm" class="pw-form" novalidate>
+        <div class="field">
+          <label for="pwInput">Password</label>
+          <input id="pwInput" type="password" autocomplete="current-password" placeholder="Enter password" required aria-describedby="pwError" />
+        </div>
+        <p id="pwError" class="pw-error small" role="alert" aria-live="polite"></p>
+        <button class="btn btn-primary btn-block" type="submit">Unlock</button>
+      </form>
+      <p class="small muted" style="margin-top:14px">
+        Need access? Contact Marty: <a href="tel:+19542042464">(954) 204-2464</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Protected Content -->
+  <main id="main" class="pw-content" hidden>
+
+    <section class="page-hero">
+      <div class="container page-hero-inner">
+        <div>
+          <h1>Flowater Refill Station Inventory</h1>
+          <p class="lead muted">Refurbished units available for purchase or lease. Review the details below and reach out with questions.</p>
+        </div>
+        <button id="lockBtn" class="btn btn-ghost btn-small" type="button">🔒 Lock page</button>
+      </div>
+    </section>
+
+    <!-- Photo & Video Gallery -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>📸 Photos &amp; Videos</h2>
+          <p class="muted">Shots taken of available refurbished units.</p>
+        </div>
+
+        <div class="media-grid" id="mediaGrid">
+          <!-- ═══════════════════════════════════════════════════════════
+               HOW TO ADD YOUR OWN PHOTOS & VIDEOS
+               ─────────────────────────────────────────────────────────
+               Photos:  Add an <img> card like the example below.
+                        Place image files in  assets/flowater/
+               Videos:  Add a <video> card like the example below.
+                        Place video files in  assets/flowater/
+               ─────────────────────────────────────────────────────────
+               PHOTO EXAMPLE:
+               <div class="media-card">
+                 <img src="assets/flowater/unit1-front.jpg" alt="Unit 1 – front view" />
+                 <p class="media-caption muted small">Unit 1 – front</p>
+               </div>
+
+               VIDEO EXAMPLE:
+               <div class="media-card">
+                 <video controls preload="metadata" poster="assets/flowater/unit1-thumb.jpg">
+                   <source src="assets/flowater/unit1-demo.mp4" type="video/mp4" />
+                 </video>
+                 <p class="media-caption muted small">Unit 1 – demo</p>
+               </div>
+               ═══════════════════════════════════════════════════════════ -->
+          <div class="media-placeholder">
+            <span class="media-placeholder-icon">🖼️</span>
+            <p class="muted small">Your photos &amp; videos will appear here.<br />Add files to <code>assets/flowater/</code> and update this section.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- YouTube Videos -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>▶️ Flowater Videos</h2>
+          <p class="muted">Official Flowater channel videos to help you understand the product.</p>
+        </div>
+
+        <div class="yt-grid">
+          <!-- Flowater – How It Works / Overview -->
+          <div class="yt-card">
+            <div class="yt-embed">
+              <iframe
+                src="https://www.youtube.com/embed/8ULaIvXNOyU"
+                title="Flowater – How Flowater Works"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <p class="yt-caption muted small">How Flowater Works</p>
+          </div>
+
+          <!-- Flowater – Product Intro -->
+          <div class="yt-card">
+            <div class="yt-embed">
+              <iframe
+                src="https://www.youtube.com/embed/tA-bCmEPEYw"
+                title="Flowater – Flowater Refill Station Product Introduction"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <p class="yt-caption muted small">Flowater Refill Station – Product Introduction</p>
+          </div>
+
+          <!-- Flowater – Purity / Technology -->
+          <div class="yt-card">
+            <div class="yt-embed">
+              <iframe
+                src="https://www.youtube.com/embed/9oopEjVn6yw"
+                title="Flowater – Water Purification Technology"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <p class="yt-caption muted small">Water Purification Technology</p>
+          </div>
+
+          <!-- Flowater – Corporate / Office Installation -->
+          <div class="yt-card">
+            <div class="yt-embed">
+              <iframe
+                src="https://www.youtube.com/embed/Q5v4wY15T-c"
+                title="Flowater – Office &amp; Corporate Installation"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <p class="yt-caption muted small">Office &amp; Corporate Installation</p>
+          </div>
+        </div>
+
+        <p class="small muted" style="margin-top:12px">
+          More videos: <a href="https://www.youtube.com/@FloWaterInc" target="_blank" rel="noopener">youtube.com/@FloWaterInc</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Pricing / Offer Sheet -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>💲 Pricing &amp; Offer Sheet</h2>
+          <p class="muted">Current availability and pricing for refurbished Flowater units.</p>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════════
+             HOW TO EMBED A PDF OFFER SHEET
+             ─────────────────────────────────────────────────────────
+             1. Place the PDF in  assets/flowater/offer-sheet.pdf
+             2. Replace the pricing table below with an embed:
+
+             <div class="pdf-embed">
+               <iframe src="assets/flowater/offer-sheet.pdf" title="Flowater Offer Sheet" loading="lazy"></iframe>
+             </div>
+             ═══════════════════════════════════════════════════════════ -->
+
+        <div class="pricing-table card">
+          <table class="price-tbl" aria-label="Flowater unit pricing">
+            <thead>
+              <tr>
+                <th>Unit / Model</th>
+                <th>Condition</th>
+                <th>Purchase Price</th>
+                <th>Monthly Lease</th>
+                <th>Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Flowater Refill Station</td>
+                <td>Refurbished</td>
+                <td>—</td>
+                <td>—</td>
+                <td>Contact for current pricing</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="small muted" style="margin-top:10px">
+            Prices subject to availability. All units include a service walk-through and initial filter set.
+            Contact Marty for a custom quote.
+          </p>
+        </div>
+
+        <div class="cta-strip" style="margin-top:18px">
+          <div>
+            <h3 class="m0">Interested in a unit?</h3>
+            <p class="muted m0">Reach out and I'll send you a full spec sheet and answer any questions.</p>
+          </div>
+          <div style="display:flex; gap:10px; flex-wrap:wrap">
+            <a class="btn btn-primary" href="contact.html">Request a Quote</a>
+            <a class="btn btn-ghost" href="tel:+19542042464">📞 Call Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="small muted">© <span id="year"></span> Marty Marola. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+  <script>
+    // ─── Password gate ────────────────────────────────────────────────────────
+    // To change the password, update STORED_HASH with the SHA-256 of your new
+    // password. Generate a hash at: https://emn178.github.io/online-tools/sha256.html
+    // Contact an administrator if you need access.
+    //
+    // NOTE: This is a lightweight client-side gate to deter casual visitors.
+    // It is not a security boundary — do not rely on it to protect
+    // highly sensitive information.
+    const STORED_HASH = "77c4112f7c11949370942b51305128be86e67e75a34bd12746b79d569e3a4665";
+    const SESSION_KEY = "mm_private_auth";
+
+    async function sha256(text) {
+      const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(text));
+      return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, "0")).join("");
+    }
+
+    function unlock() {
+      document.getElementById("passwordGate").hidden = true;
+      document.getElementById("main").hidden = false;
+      sessionStorage.setItem(SESSION_KEY, "1");
+    }
+
+    function lock() {
+      sessionStorage.removeItem(SESSION_KEY);
+      document.getElementById("passwordGate").hidden = false;
+      document.getElementById("main").hidden = true;
+      document.getElementById("pwInput").value = "";
+      document.getElementById("pwError").textContent = "";
+    }
+
+    // Auto-unlock if already authenticated this session
+    if (sessionStorage.getItem(SESSION_KEY) === "1") unlock();
+
+    document.getElementById("pwForm").addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const val = document.getElementById("pwInput").value;
+      const hash = await sha256(val);
+      if (hash === STORED_HASH) {
+        unlock();
+      } else {
+        const err = document.getElementById("pwError");
+        err.textContent = "Incorrect password. Try again.";
+        document.getElementById("pwInput").value = "";
+        document.getElementById("pwInput").focus();
+      }
+    });
+
+    document.getElementById("lockBtn").addEventListener("click", lock);
+  </script>
+</body>
+</html>
