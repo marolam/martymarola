@@ -354,16 +354,10 @@ input:focus, select:focus, textarea:focus{
   border-radius: var(--radius);
 }
 
-@media(max-width:920px){
+@media (max-width: 920px){
   .hero-photo{width:72px; height:72px}
   .hero-photo-wrap{gap:14px}
   .page-hero-inner{flex-direction:column; align-items:flex-start}
-}
-
-@media(max-width:600px){
-  .hero-photo-wrap{flex-direction:column}
-}
-
   .hero-grid{grid-template-columns: 1fr; }
   .cards-3{grid-template-columns: 1fr}
   .cards-2{grid-template-columns: 1fr}
@@ -386,4 +380,8 @@ input:focus, select:focus, textarea:focus{
     box-shadow: var(--shadow);
   }
   .nav-menu.open{display:flex}
+}
+
+@media (max-width: 600px){
+  .hero-photo-wrap{flex-direction:column}
 }

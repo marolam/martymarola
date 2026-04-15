@@ -48,7 +48,7 @@
       <form id="pwForm" class="pw-form" novalidate>
         <div class="field">
           <label for="pwInput">Password</label>
-          <input id="pwInput" type="password" autocomplete="current-password" placeholder="Enter password" required />
+          <input id="pwInput" type="password" autocomplete="current-password" placeholder="Enter password" required aria-describedby="pwError" />
         </div>
         <p id="pwError" class="pw-error small" role="alert" aria-live="polite"></p>
         <button class="btn btn-primary btn-block" type="submit">Unlock</button>
@@ -258,9 +258,13 @@
   <script src="assets/js/main.js" defer></script>
   <script>
     // ─── Password gate ────────────────────────────────────────────────────────
-    // Default password: flowater2024
-    // To change it, update STORED_HASH with the SHA-256 of your new password.
-    // You can generate a new hash at: https://emn178.github.io/online-tools/sha256.html
+    // To change the password, update STORED_HASH with the SHA-256 of your new
+    // password. Generate a hash at: https://emn178.github.io/online-tools/sha256.html
+    // Contact an administrator if you need access.
+    //
+    // NOTE: This is a lightweight client-side gate to deter casual visitors.
+    // It is not a security boundary — do not rely on it to protect
+    // highly sensitive information.
     const STORED_HASH = "77c4112f7c11949370942b51305128be86e67e75a34bd12746b79d569e3a4665";
     const SESSION_KEY = "mm_private_auth";
 
